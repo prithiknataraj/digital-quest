@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Quest</title>
+
+    <!-- linking external css -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1 id="round_name">Digital Quest</h1> <!-- Heading of the page-->
+
+    {% if start== 0: %}
+    <!-- start -->
+    <form action="/start" method="POST" class="bottle">
+        <input type="submit" value="START" id="start">
+    </form>
+
+    <!-- Question 1 -->
+    {% elif start== 1: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 1</h3>
+
+        <!-- question -->
+        <p class="question">I am on a journey through the vertices and edges, a quest to uncover the secrets hidden within the connections. Starting at a specific point, I follow a precise path to reveal the structure's mysteries. What am I?</p>
+        <p class="question2">Decipher the riddle and identify the graph traversal algorithm being described. Provide a real-world scenario where this algorithm could be applied to unravel relationships or dependencies, and elaborate on the significance of the revealed information.</p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input1">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer1" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+
+        <!-- clue -->
+        <!-- <p class="clue"><span class="bulb"></span>Decipher the riddle and identify the graph traversal algorithm being described. Provide a real-world scenario where this algorithm could be applied to unravel relationships or dependencies, and elaborate on the significance of the revealed information.</p> -->
+    </section>
+
+    <!-- Question 2 -->
+    {% elif start== 2: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 2</h3>
+
+        <!-- question -->
+        <img class="quest-img" src="/static/img/q2.jpg">
+        <p class="question2">Examine the illustration depicting a sorting algorithm. Based on the labeled steps and computational complexities, identify the sorting algorithm being represented. Provide an analysis of its time and space complexity, and discuss a scenario where choosing this algorithm over others would be advantageous.</p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input2">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer2" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+    </section>
+
+    <!-- Question 3 -->
+    {% elif start== 3: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 3</h3>
+
+        <!-- question -->
+        <p class="question">You can only enter 0 and 1<br>
+            No more than two identical digits may be placed directly next to or below each other<br>
+            Each row is unique<br>
+            Each column is unique<br>
+            Each row or column has the same number of zeros and ones for</p>
+        <img class="quest-img" src="/static/img/q3.jpg">
+        <p class="question2">Fill the first row.</p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input3">
+            <!-- <label for="answer">answer</label> -->
+            <input type="password" class="answer" name="answer3" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+    </section>
+
+    <!-- Question 4 -->
+    {% elif start== 4: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 4</h3>
+
+        <!-- question -->
+        <img class="quest-img" src="/static/img/q4.jpg">
+        <p class="question2">Find groups of four items that share something in common.<br>
+            • Select four items<br>
+            • Find the groups
+        </p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input4">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer4" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+
+        <!-- clue -->
+        <p class="clue"><span class="bulb"></span><br>
+            FISH: Bass, Flounder, Salmon, Trout<br>
+            FIRE: Ant, Drill, Island, Opal
+        </p>
+    </section>
+
+    <!-- Question 5 -->
+    {% elif start== 5: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 5</h3>
+
+        <!-- question -->
+        <p class="question">Loop<br>
+            <br>
+            if riddle is answered then exit<br>
+            <br>
+            else<br>
+            <br>
+            All human kind is subject to this negativity<br>
+            <br>
+            nothing is true in life except these two things<br>
+            <br>
+            concatenate the synonyms into a string to uncover an error<br>
+            <br>
+            terminate due to this error and the riddle is answered<br>
+            <br>
+            end if;<br>
+            <br>
+            end loop;
+            </p>
+        <p class="question2">Find the type of error.</p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input5">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer5" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+    </section>
+
+    <!-- Question 6 -->
+    {% elif start== 6: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 6</h3>
+
+        <!-- question -->
+        <p class="question">I'm a paradox in programming,<br>
+            Like Schrödinger's cat, both null and not null,<br>
+            I'm a placeholder with uncertainty,<br>
+            What am I in the coding sea?
+            </p>
+        <p class="question2">In the realm of programming, what do you call a reference that doesn't point to any valid memory address?</p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input6">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer6" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+    </section>
+
+    <!-- Question 7 -->
+    {% elif start== 7: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 7</h3>
+
+        <!-- question -->
+        <p class="question">Find what error will be occur in the terminal</p>
+        <p class="question2">variable = 3<br>
+            print(varaible)
+        </p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input7">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer7" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+    </section>
+
+    <!-- Question 8 -->
+    {% elif start== 8: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 8</h3>
+
+        <!-- question -->
+        <p class="question">Fill in the blanks.</p>
+        <p class="question2">__________ is used to integrate changes from one branch into another, providing a cleaner commit history.</p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input8">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer8" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+    </section>
+
+    <!-- Question 9 -->
+    {% elif start== 9: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 9</h3>
+
+        <!-- question -->
+        <p class="question">Fill in the blanks</p>
+        <p class="question2">A __________ is a tree-like data structure used for storing a dynamic set or associative array where the keys are sequences, usually strings. Each node in the __________ represents a character, and the path from the root to a particular node spells out a key. Unlike traditional trees, __________ nodes can have multiple children, each corresponding to a different character. __________s are advantageous for scenarios where fast prefix searches, insertions, and deletions are required, making them suitable for applications like autocomplete systems or spell checkers.</p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input9">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer9" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+
+        <!-- clue -->
+        <p class="clue"><span class="bulb"></span><br>
+        Enter a single word to fill all the blanks
+        </p>
+    </section>
+
+    <!-- Question 10 -->
+    {% elif start== 10: %}
+    <section class="bottle">
+        <!-- The question part -->
+        <!-- question number -->
+        <h3 class="question_number">Question - 10</h3>
+
+        <!-- question -->
+        <p class="question">Find the output.</p>
+        <p class="question2">def calculate_sum(a, b):<br>
+                result = a + b<br>
+                return result<br>
+            <br>
+            def main():<br>
+                x = 10<br>
+                y = 5<br>
+                z = 7<br>
+            <br>
+                total_sum = calculate_sum(x, y, z)<br>
+                print("The total sum is:", total_sum)<br>
+            <br>
+            if __name__ == "__main__":<br>
+                main()
+        </p>
+
+        <!-- input box -->
+        <form class="input" method="POST" action="/input10">
+            <!-- <label for="answer">answer</label> -->
+            <input type="text" class="answer" name="answer10" placeholder="Answer...">
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        {% if status== 'wrong': %}
+        <!-- status -->
+        <h1 class="status">Wrong Answer !!</h1>
+        {% endif %}
+    </section>
+
+    {% elif start== 11: %}
+    <section class="bottle">
+        <h1 id="cleared">Ready for the next round?<br>Let the games continue!</h1>
+    </section>
+    {% endif %}
+
+    <!-- design-team -->
+    <h1 id="design_team">Design: @Yukthi</h1>
+</body>
+</html>

@@ -1,0 +1,10 @@
+[["dfs", "depth first search", "depth-first search", "depth-first", "depth first", "bfs", "breadth first search", "breadth-first search", "breadth-first", "breadth first"],
+ ["quick sort", "quick sort algorithm", "quick sorting", "quick sorting algorithm", "quick"],
+ ["10100101", "1 0 1 0 0 1 0 1", "1,0,1,0,0,1,0,1"],
+ ["kernel, shell, root, bash", "java, swift, ruby, python", "firewall, proxy, router, gateway", "ram, cache, registers, pipeline", "kernel,shell,root,bash", "java,swift,ruby,python", "firewall,proxy,router,gateway", "ram,cache,registers,pipeline", "kernel shell root bash", "java swift ruby python", "firewall proxy router gateway", "ram cache registers pipeline"],
+ ["syntax", "syntaxerror", "syntax error"],
+ ["null pointer", "nullpointer"],
+ ["nameerror", "name error", "name"],
+ ["gitrebase", "git rebase"],
+ ["trie"],
+  ["typeerror", "type error", "type"]]
